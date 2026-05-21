@@ -74,7 +74,6 @@ def get_student_by_email(request, email):
             student = Student.objects.get(email=email)
             
             data = {
-                "id": student.id,
                 "first_name": student.first_name,
                 "last_name": student.last_name,
                 "email": student.email,

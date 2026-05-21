@@ -37,12 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',  # Added for React frontend CORS support
     'student'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # CORS middleware - must be before CommonMiddleware
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -116,3 +118,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# ============================================
+# CORS Settings (for React frontend)
+# ============================================
+# This allows the React dev server (localhost:5173) to make
+# requests to this Django backend (localhost:8000).
+# Without this, the browser would block the API calls.
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",   # Vite React dev server
+    "http://127.0.0.1:5173",  # Alternative localhost
+]

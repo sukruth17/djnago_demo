@@ -1,0 +1,96 @@
+/* ============================================
+   Search Page Styles
+   ============================================ */
+
+.search-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.search-page h1 {
+  font-size: 1.6rem;
+  color: #1a1a2e;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.search-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+/* ---- Two methods side by side ---- */
+.search-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.search-method {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.method-header {
+  margin-bottom: 12px;
+}
+
+.method-header h2 {
+  font-size: 1.15rem;
+  color: #1a1a2e;
+  margin: 0 0 6px 0;
+}
+
+.method-header code {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.method-explanation {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* ---- Student Result Card ---- */
+.student-card {
+  background: #f0fdf4;
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.student-card h3 {
+  margin: 0 0 12px 0;
+  color: #065f46;
+  font-size: 1rem;
+}
+
+.student-details p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.student-details strong {
+  color: #1a1a2e;
+}
+
+/* ---- Reusing form and alert styles from FormPage.css ---- */
+/* The .form-group, .btn, and .alert classes come from FormPage.css */
+
+/* ---- Responsive: Stack on mobile ---- */
+@media (max-width: 700px) {
+  .search-grid {
+    grid-template-columns: 1fr;
+  }
+}

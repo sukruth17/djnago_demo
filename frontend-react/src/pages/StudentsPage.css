@@ -1,0 +1,99 @@
+/* ============================================
+   Students Page Styles (Table view)
+   ============================================ */
+
+.students-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.students-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.students-header h1 {
+  font-size: 1.6rem;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.students-header p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+/* ---- Table ---- */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.students-table thead {
+  background: #1a1a2e;
+}
+
+.students-table th {
+  padding: 14px 16px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.students-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f5;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.students-table tbody tr:hover {
+  background: #f8f9ff;
+}
+
+.students-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---- Loading & Empty States ---- */
+.loading-message {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #6b7280;
+  font-size: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .students-table th,
+  .students-table td {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+}

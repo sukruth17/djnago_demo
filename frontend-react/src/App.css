@@ -1,0 +1,57 @@
+/* ============================================
+   Global App Styles
+   ============================================
+   These styles apply to the entire application.
+   We use a clean, professional look with a light background.
+*/
+
+/* ---- CSS Reset & Base ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #1f2937;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ---- Main Content Area ---- */
+/* This adds padding below the navbar */
+.main-content {
+  padding: 0;
+  min-height: calc(100vh - 60px);
+}
+
+/* ---- Links ---- */
+a {
+  color: #4361ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Scrollbar (optional, for Chrome/Edge) ---- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4ce;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0b0;
+}
