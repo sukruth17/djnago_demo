@@ -14,6 +14,7 @@ import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import StudentsPage from "./pages/StudentsPage";
 import SearchPage from "./pages/SearchPage";
+import SimpleTextPage from "./pages/SimpleTextPage";
 import "./App.css";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/students" element={<StudentsPage />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/simple" element={<SimpleTextPage />} />
         </Routes>
       </main>
     </BrowserRouter>
